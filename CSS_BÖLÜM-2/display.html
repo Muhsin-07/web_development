@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 60px; 
+            width: 60px;
+            display: inline-block; 
+        }
+
+        #first { 
+            background-color: darkolivegreen; 
+        }
+
+        #second { 
+            background-color: chocolate;
+        }
+
+        #third { 
+            background-color: blueviolet; 
+        }
+        a {
+            width: 90px;
+            height:auto;
+            display: block;
+            background-color: cadetblue;
+            border: 2px darkblue solid;
+        }
+    </style>
+
+</head>
+<body>
+        <!-- display : none | inline | display-bolck | block -->
+
+        <!-- display özellikleri inline elemanları block elemanına çevirebilmemizi 
+        yan yana almamızı veya inline olan elemanlarını alt alta ve ayan yana almamızı sağlayan özelliklerdir. 
+        display : inline özelliği uygulandığı zaman uygulanan yazı veya blocklar inline gibi davranır ve içerik kadar yer kaplar.
+        display : inline-block dediğimizde ise içeriğe genişlik ve yükseklik verebiliriz yan yana alabiliriz.
+        display : block özelliği ise inline olan elemanlara uygulanarak onları alt alta alamızı ve genişlik ve yükseklik verebilmemizi sağlar -->
+
+
+        <div id="contenier">
+            <div class="box" id="first">first</div>
+            <div class="box" id="second">second</div>
+            <div class="box" id="third">third</div>
+        </div>
+
+
+        <div>
+            <a href="#">movie</a>
+            <a href="#">display</a>
+            <a href="#">chart</a>
+        </div>
+</body>
+</html>

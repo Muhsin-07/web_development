@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* div p {
+            background-color: red;
+        } */
+
+        /* div > p {
+            background-color: red;
+        } */
+
+        /* div + p {
+            background-color: red;
+        } */
+
+        div ~ p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Combinators -->
+
+            <!-- 1- Descendant Selector ( ) -->
+    <!-- div p {} diyerek uygulayabiliriz manası ise div altındaki tüm p etiketlerine uygula demek 
+        oluyor ve div altındaki tüm p etiketleri bu css koduna yazdığımız içerikten etkilenir. -->
+
+
+            <!-- 2- Child Selector (>) -->
+    <!-- div > p {} bu etiketi kullanarak sadece div altındaki p etiketlerinden bahsederiz 
+        Descendanttan farklı olarak <section></section> etiketinde yer alan p etiketi bu durumdan etkilenmez. -->
+
+    <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+
+            <!-- 3- Adjacent Sibling Selector (+) -->
+    <!-- div + p {} dediğimizde ise div etiketinden sonra gelen ilk p elemanını bul ve sadece ona işlem yap demiş oluyoruz  -->
+
+            <!-- 4- General Sibling Selector (~) -->
+    <!-- div ~ p {} demek ise div etiketinden gelen tüm p etiketlerini bul ve onlara css kodunu uygula demek oluyor -->
+
+</body>
+</html>

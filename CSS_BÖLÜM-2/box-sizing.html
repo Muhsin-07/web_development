@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <style>
+      
+        * {
+            box-sizing: border-box;
+        }
+
+        #showcase { 
+            background-color: #2E4C6D; 
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+            border: 5px solid red;
+        }
+       
+        #how-it-works { 
+            background-color: #FC997C;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- box sizing -->
+
+    <!-- box sizing özelliği konteynırın içine koyduğumuz içeriğin içeriği tam olarak içine almasını sağlar ama 
+        içeriğe border veya padding değerleri atatığımız zaman bazen içerik konteynıra sığmayabilir bu durumda ise 
+        border-box özelliği box sizing özelliğine yazılır ve bu durumda içerik küçülerek içeriğe vermiş olduğumuz 
+        borders ve pading bilgileri konteynıra sığmış olur.
+
+            * {
+            box-sizing: border-box;
+        }
+     -->
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Contact</a>
+    </nav>
+
+   <main>
+       <section id="showcase">
+           <h1>Welcome to MovieApp</h1>
+       </section>
+       <section id="how-it-works">
+           <h2>How it works?</h2>
+       </section>
+   </main>
+
+</body>
+</html>

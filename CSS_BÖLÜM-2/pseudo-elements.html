@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            font-weight: bold;
+            color: brown;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
+        /* p etiketleri altındaki paragrafların ilk satırını kalın yap rengini brown, kelimeler arası 2 px boşluk ve 
+        harfler arası da 1px boşluk olsun demiş oluyoruz. */
+
+        p.about::first-line {
+            color: green;
+        }
+        /* burada ise p etiketlerinden classı abaut olan paragrafı bul ve ilk satırını yeşil yap demiş oluyoruz. */
+
+        p::first-letter {
+            font-size: 48px;
+        }
+        /* p etiketlerinin altındaki paragrafları bul onların ilk harfinin font değerini 48px yap demiş oluyoruz. */
+
+        ::selection {
+            background-color: hotpink;
+        }
+        /* tüm kısımları ele almış oluruz çünkü bir kapsam belirtmemiş oluyoruz o yüzden yazdığımız kod tüm sayfa için geçerli olur
+         ::selection {color: hotpink;} demek seçilecek olan tüm kelimelerin backraund-colorunu hotpink yap demiş oluyoruz. */
+
+        p::after {
+            content: '\261D';
+            font-size: 35px;
+            padding: 10px;
+        }
+        /* demek ise p etiketindeki paragrafların sonuna emoji koy (content: '\261D';) 
+        (internet üzerinden bu  emoji  kodlarına ulaşabiliriz.)/* ***html unicode characters diyerek aratabiliriz. w3schools**** */
+        /* ve emojinin fontunu ve padding değerini uygulamış oluruz. */
+
+    </style>
+</head>
+<body>
+
+            <!-- Pseudo elements  -->
+    <!-- herhangi bir elementin istediğimiz parçasına etki edebiliriz bu css kodlarını yazarken :: iki tane iki nokta ile yaparız. -->
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda in nihil animi, voluptate possimus amet nostrum similique! Itaque, ipsa. Dicta hic quasi inventore distinctio odio rem nihil atque impedit tenetur.
+    </p>
+
+    <p class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, pariatur asperiores sunt odit error reiciendis corrupti deserunt explicabo exercitationem consectetur. Deserunt quasi harum magnam nihil consectetur dignissimos tempora sapiente maiores!
+    </p>
+
+
+</body>
+</html>

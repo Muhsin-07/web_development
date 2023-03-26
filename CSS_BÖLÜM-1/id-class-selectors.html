@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section { background-color: #2E4C6D; }
+        /* burada yapmış olduğumuz düzenleme tag css olarak geçer ve etiketler üzerinde yapacağımız değişiklikleri ifade eder.
+        işlem yapmak istediğimiz etiketin adı yazılır ve css kodları yazılarak nişlem yapılır. */
+
+        .f20 { font-size: 20px; }
+        .f18 { font-size: 18px; }
+        /* burada class ile yapmış olduğumuz değişiklikler bulunuyor burada class özelliği ile 
+        gruplandırma yaparak bir çok tagda bulunan aynı calssa sahip etiketleri tek bir çatı altında toplayıp işlem yapabiliriz.
+        burada .class olarak verdiğimiz ismi yazıp işlem yaparız. */
+
+        #page-title { border: 2px solid red; }
+        #page-subtitle { border: 2px solid blue; }
+        /* burada ise id oluşturarak yazmış olduğumuz kodlar mevcut bu kodlar vermiş olduğumuz idler üzerinden gerçekleşir 
+        ve # id'den önce bu işaret başına yazılır ve css kodları eklenir class özlelliğinden farklı olarak id tek bir etikete verilir 
+        aynı id birden fazla etikette bulunmaz ve o etiketi benzersiz kılar.  */
+
+        .text-white { color: #fff; }
+        /* bu da bir class özelliği kullanımıdır bir etikete birden fazla class verilebilir. 
+        verilen birden fazla classı hem özel olarak işlem yapabiliriz hem de tek çatı altında toplayarak hepsini aynı işleme alabiliriz. */
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <h1 id="page-title" class="text-white f20">Welcome To MovieApp</h1>
+        </section>
+        <section>
+            <h2 id="page-subtitle" class="text-white f18">How it works?</h2>
+        </section>
+    </main>
+
+</body>
+</html>
